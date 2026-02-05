@@ -1,0 +1,223 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+header video {
+    z-index: -1;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(248, 246, 246);
+    font-weight: bold;
+}
+
+.content-title{
+    position: absolute;  /* flota sobre el vídeo */
+    top: 50%;            /* 50% desde arriba del header */
+    left: 50%;           /* 50% desde la izquierda */
+    transform: translate(-50%, -50%); /* lo centra vertical y horizontalmente */
+    text-align: center;  /* centra el texto dentro */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.content-title a {
+    background-color: rgb(201, 68, 68);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 10px;
+}
+
+/* responsive header */
+
+@media (max-width: 340px) {
+    nav a {font-size: 9px;}
+}
+
+@media (min-width: 1000px) {
+    nav a { font-size: 25px;}
+}
+
+@media (max-width: 1000px) {
+    .content-title { font-size: 10px;}
+}
+
+@media (min-width: 800px) {
+    .content-title { font-size: 20px;}
+}
+
+
+@media (max-width: 600px) {
+    .content-title {
+        top: 20%;           /* baja un poco el bloque para que no se salga */
+        gap: 1px;          /* menos separación para móviles */
+    }
+
+    .content-title h1 {
+        font-size: 18px;    /* título más pequeño */
+    }
+
+    .content-title p {
+        font-size: 14px;    /* texto más pequeño */
+    }
+
+    .content-title a {
+        font-size: 14px;    /* botón más pequeño */
+        padding: 9px 10px; /* reduce padding */
+    }
+}
+
+
+/* main contenido */
+
+main {
+    padding: 180px 20px;
+}
+
+#nuestro-concepto h2 {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline ;
+    padding: 20px;
+}
+
+.concepto {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 20px;
+
+}
+
+p span{
+    font-size: 19px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 520px;
+    height:  700px;
+    border-radius: 40px;
+}
+
+
+#menu {
+    text-align: center;
+    padding: 80px 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#menu h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.grid article {
+    background-color: rgb(27, 27, 27);
+    border-radius: 40px;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 420px;
+}
+
+.grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;     /* recorta sin deformar */
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 17px;
+}
+
+
+#delivery {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#delivery h2 {
+    font-size: 50px;
+}
+
+#delivery p{
+    font-size: 20px;
+}
+
+#delivery a{
+    background-color: rgb(201, 68, 68);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 10px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer address {
+    text-align: center;
+    margin: 0;
+}
+

@@ -63,43 +63,53 @@ nav a {
 
 /* responsive header */
 
-@media (max-width: 340px) {
-    nav a {font-size: 9px;}
+@media (max-width: 342px) {
+    nav a {font-size: 6px;}
 }
 
 @media (min-width: 1000px) {
     nav a { font-size: 25px;}
 }
 
-@media (max-width: 1000px) {
-    .content-title { font-size: 10px;}
-}
-
-@media (min-width: 800px) {
-    .content-title { font-size: 20px;}
-}
 
 
 @media (max-width: 600px) {
     .content-title {
-        top: 20%;           /* baja un poco el bloque para que no se salga */
-        gap: 1px;          /* menos separación para móviles */
+        top: 100%;           /* baja un poco el bloque para que no se salga */
+        gap: 0px;          /* menos separación para móviles */
     }
 
     .content-title h1 {
-        font-size: 18px;    /* título más pequeño */
+        font-size: 8px;    /* título más pequeño */
     }
 
     .content-title p {
-        font-size: 14px;    /* texto más pequeño */
+        font-size: 6px;    /* texto más pequeño */
     }
 
     .content-title a {
-        font-size: 14px;    /* botón más pequeño */
-        padding: 9px 10px; /* reduce padding */
+        font-size: 6px;    /* botón más pequeño */
+        padding: 4px 6px; /* reduce padding */
     }
 }
 
+
+@media (max-width: 608px) {
+
+
+    header {
+        min-height: 10vh; /* reduce la altura del header para que no se vea tan separado */
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        bottom: 10px; /* sube el nav hacia arriba */
+    }
+
+}
 
 /* main contenido */
 
@@ -205,6 +215,62 @@ img {
     text-align: center;
     font-size: 18px;
     padding: 15px 10px;
+    position: relative;
+    top: 60px;
+}
+
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 100px 20px;
+    }
+
+    #nuestro-concepto h2,
+    #menu h2,
+    #delivery h2 {
+        font-size: 32px;
+    }
+
+    p span {
+        font-size: 16px;
+    }
+
+    .concepto {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    #delivery p {
+        font-size: 18px;
+    }
+
+    #delivery a {
+        top: 30px;
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px 10px;
+    }
+
 }
 
 footer {

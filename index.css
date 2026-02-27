@@ -55,6 +55,11 @@ nav a {
     gap: 20px; 
 }
 
+.content-title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
 
 .content-title a {
     background-color: rgb(201, 68, 68);
